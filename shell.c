@@ -35,7 +35,7 @@ void read_cmd(char cmd[], char *par[]) {
 
 	pch = strtok(line, " \n");//breaking the input into tokens.
 	while (pch != NULL) {
-		arr[i++] = strdup(pch);
+		arr[i++] = pch;
 		pch = strtok(NULL, " \n");
 	}
 	strcpy(cmd, arr[0]);//copying the command in cmd.
